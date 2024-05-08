@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+<img src ='https://img.freepik.com/premium-vector/cold-warm-thermometer-temperature-weather-thermometers-with-celsius-fahrenheit-scale-thermostat-meteorology-icon_176516-112.jpg?w=360'>
+    <style>
+    img {
+    padding:50px;
+    border:10px;
+    margin:5px;
+    opacity: 0.5;
+ 
+        body{
+            text-align: center;
+            background-color: white;
+            font-family: cursive;
+        }
+        .mainbox{
+            width: 45%;
+            margin: 5%;
+            padding:5%;
+            margin-left:20%
+        }
+        .temp{
+            width:40%;
+            height: 40px;
+            font-size: larger;
+            font-family: cursive;
+        }
+        .dropdown{
+            height:45px;
+            font-size: larger;
+          font-family: cursive;
+          background-color: lightgrey;
+        }
+        button{
+            display: block;
+            text-align: center;
+            margin-left: 40%;
+            margin-top: 3%;
+            height: 40px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <h1>Temperture Conversion</h1>
+        <h2>Enter Temperature </h2>
+        
+        <input type="number" id="tempo" placeholder="Enter here" size="3"  >
+        <select class="dropdown">
+            <option value="k">Kelvin</option>
+             <option value="c">Celcius</option>
+            <option value="f">Farenheit</option>
+        </select>
+        <button onclick="converter(document.getElementById('tempo').value)">CONVERT</button>
+        <span class="result"></span>
+        
+
+    </div>
+</body>
+</html>
+<script>
+    function converter(temp){
+        var dropdown = document.querySelector('.dropdown');
+        var unit = dropdown.value;
+        var f, k, c;
+        
+        if(unit === 'c'){
+            f = (temp * 9) / 5 + 32;
+            k = parseFloat(temp) + 273.15;
+            c = temp;
+        }
+        else if(unit === 'f'){
+            f = parseFloat(temp);
+            k = ((parseFloat(temp) - 32) * 5) / 9 + 273.15;
+            c = ((parseFloat(temp) - 32) * 5) / 9;
+        }
+        else{
+            f = ((parseFloat(temp) - 273.15) * 9) / 5 + 32;
+            k = parseFloat(temp);
+            c = parseFloat(temp) - 273.15;
+        }
+
+        var text = "IN CELSIUS: " + c + "°C\n" + "IN FAHRENHEIT: " + f + "°F\n" + "IN KELVIN: " + k + "K";
+        document.querySelector('.result').innerText = text;
+    }
+</script>
