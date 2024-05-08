@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKIGAI - Reason for Living</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .words {
+            background-image: url('https://ibooks.lk/wp-content/uploads/2022/11/ikigai.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .words h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+
+        .words h2 {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.7;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .content {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="words">
+        <h1>IKIGAI - Reason for Living</h1>
+        <h2>Books are more than words.</h2>
+        <a href="#about" class="cta-button">Learn More</a>
+    </div>
+
+    <div id="about" class="container">
+        <div class="content">
+            <h2>About the Book:</h2>
+            <p>The people of Japan believe that everyone has an ikigai. A reason to jump out of bed each morning. And according to the residents of the Japanese island of Okinawa, the world’s longest-living people, finding it is the key to a longer and more fulfilled life. Inspiring and comforting, this book will give you the life-changing tools to uncover your personal ikigai. It will show you how to leave urgency behind, find your purpose, nurture friendships, and throw yourself into your passions.</p>
+            <h2>Review on this Book:</h2>
+            <p>After reading the book "Blue Zones" by Dan Buettner, I learned two things: "Ikigai" and "Hara hachi bu" (more on that later). These are very interesting terms when it comes to a long and healthy life. Do not we all want to live a long, healthy, and happy life? Francesc Miralles and Héctor García did research on the secret of the elderly in Japan. Why do Japanese elderly become so extremely old in certain areas in Japan? What are they eating? What are they doing to stay active? How do they deal with stress? What does their social life look like? All of this is discussed in "Ikigai, the Japanese secret for a long and happy life".</p>
+        </div>
+        <div class="links">
+            <a href="https://www.amazon.com/Ikigai-Japanese-Secret-Long-Happy/dp/0143130722" target="_blank">Amazon Link</a>
+        </div>
+    </div>
+</body>
+</html>
